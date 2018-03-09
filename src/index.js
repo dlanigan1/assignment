@@ -21,7 +21,7 @@ const Router = (props) =>
         <div className="container">
             <Switch>
                 <Route path='/about' component={ About } />
-                 <Route exact path='/books/' component={ Books } />
+                <Route exact path='/books/' component={ Books } />
                 <Route path='/books/:id' component={ Book } />
                 <Route exact path='/' component={ Home } />
                 <Redirect from='*' to='/' />

@@ -1,20 +1,32 @@
 import React from 'react';
 import { withRouter, Route } from 'react-router-dom';
 
-const Book = (props) => {
-  return (
-    <div>
-       <h1>Book page</h1>
-       <Messages id={props.match.params.id}/>
-       <div>
-         <Route path={`/books/:id/statistics`} component={ Stats } />
-       </div>
-    </div>
-  );
+class Book extends React.Component {
+  state = {
+    title: this.props.book.title,
+    author: this.props.book.author,
+    status: this.props.book.status
+  };
+
+
+  render() {
+      let fields = [
+              <p key={'author'} >Author : {this.state.author}</p>,
+              <p key={'status'} >Status : {this.state.status}</p>,
+             ] ;
+      return (
+        <div className="col-sm-3" >
+          <div className="panel panel-primary">
+            <div className="panel-heading">
+              { this.props.book.title }
+            </div>
+            <div className="panel-body">
+              {fields}
+            </div>
+          </div>
+        </div>
+      ) ;
+   }
 }
-
-const Messages = (props) => <h3>Messages for user: {props.id} </h3>;
-
-const Stats = (props) =>  <h3>Statistical data</h3>;
 
 export default withRouter(Book);

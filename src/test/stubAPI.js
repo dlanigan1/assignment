@@ -7,52 +7,52 @@ class StubAPI {
           {
               'title': 'Book 1',
               'author': 'david lanigan',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 2',
               'author': 'john murphy',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 3',
               'author': 'jackie wilson',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 4',
               'author': 'johnny rotten',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 5',
               'author': 'johnny rotten',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 6',
               'author': 'mavis beacon',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 7',
               'author': 'travis yule',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 8',
               'author': 'chewie lewie',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 9',
               'author': 'todd unchious',
-              'available': true
+              'status': 'available'
           },
           {
               'title': 'Book 10',
               'author': 'maeve gibbons',
-              'available': true
+              'status': 'available'
           },
 
         ] ;
