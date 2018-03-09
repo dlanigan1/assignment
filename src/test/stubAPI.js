@@ -40,17 +40,17 @@ class StubAPI {
               'available': true
           },
           {
-              'title': 'Book 9',
+              'title': 'Book 8',
               'author': 'chewie lewie',
               'available': true
           },
           {
-              'title': 'Book 10',
+              'title': 'Book 9',
               'author': 'todd unchious',
               'available': true
           },
           {
-              'title': 'Book 11',
+              'title': 'Book 10',
               'author': 'maeve gibbons',
               'available': true
           },

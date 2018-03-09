@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import About from './about';
-import Inbox from './inbox';
+import Book from './book';
 import Header from './header';
 import Footer from './footer';
-import MyInbox from './myInBox';
+import Books from './books';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './app.css';
 
@@ -21,8 +21,8 @@ const Router = (props) =>
         <div className="container">
             <Switch>
                 <Route path='/about' component={ About } />
-                 <Route exact path='/inbox/' component={ MyInbox } />
-                <Route path='/inbox/:id' component={ Inbox } />
+                 <Route exact path='/books/' component={ Books } />
+                <Route path='/books/:id' component={ Book } />
                 <Route exact path='/' component={ Home } />
                 <Redirect from='*' to='/' />
             </Switch>
