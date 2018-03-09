@@ -1,8 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import About from './about';
+import Inbox from './inbox';
+import Header from './header';
+import Footer from './footer';
+import MyInbox from './myInBox';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import './app.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const Home = (props) =>
+    <div>
+        <h1>Home page</h1>
+    </div>
+
+const Router = (props) =>
+    <BrowserRouter>
+      <div>
+        <Header/>
+        <div className="container">
+            <Switch>
+                <Route path='/about' component={ About } />
+                 <Route exact path='/inbox/' component={ MyInbox } />
+                <Route path='/inbox/:id' component={ Inbox } />
+                <Route exact path='/' component={ Home } />
+                <Redirect from='*' to='/' />
+            </Switch>
+        </div>
+        <Footer />
+     </div>
+    </BrowserRouter>
+
+
+ReactDOM.render((
+    <Router/>
+), document.getElementById('root')) ;
