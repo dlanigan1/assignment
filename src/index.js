@@ -7,6 +7,7 @@ import Header from './header';
 import Footer from './footer';
 import Books from './books';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import './app.css';
 
 const Home = (props) =>
