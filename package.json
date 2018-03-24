@@ -7,9 +7,11 @@
     "lodash": "^2.4.2",
     "npm": "^5.7.1",
     "react": "^16.2.0",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "superagent": "^3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",

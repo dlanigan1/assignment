@@ -8,60 +8,80 @@ class StubAPI {
               'id':1,
               'title': 'Book 1',
               'author': 'david lanigan',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':2,
               'title': 'Book 2',
               'author': 'john murphy',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':3,
               'title': 'Book 3',
               'author': 'jackie wilson',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':4,
               'title': 'Book 4',
               'author': 'johnny rotten',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':5,
               'title': 'Book 5',
               'author': 'johnny rotten',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':6,
               'title': 'Book 6',
               'author': 'mavis beacon',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':7,
               'title': 'Book 7',
               'author': 'travis yule',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':8,
               'title': 'Book 8',
               'author': 'chewie lewie',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':9,
               'title': 'Book 9',
               'author': 'todd unchious',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
           {
               'id':10,
               'title': 'Book 10',
               'author': 'maeve gibbons',
+              'genre': 'Crime',
+              'summary': 'This is a really great book that everyone should read',
               'status': 'available'
           },
 
@@ -74,10 +94,21 @@ class StubAPI {
         );
         return elements;
     }
+
     getAll() {
         return this.books ;
     }
 
+    findBook(key){
+      let index = _.findIndex(this.books,
+          (book) => book.id === key
+      );
+      if (index !== -1) {
+            return this.books[index];
+      }
+      return "" ;
+
+    }
     add(n,a,p) {
         let len = this.books.length ;
         let newLen = this.books.push({

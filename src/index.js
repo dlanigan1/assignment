@@ -12,7 +12,7 @@ import './app.css';
 
 const Home = (props) =>
     <div>
-        <h1>Home page</h1>
+        <h1>Welcome to the Library Book System</h1>
     </div>
 
 const Router = (props) =>
