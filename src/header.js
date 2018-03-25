@@ -20,7 +20,7 @@ class Header extends React.Component {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/books">View Books</Link></li>
                         <li><Link to="/books">Add/Delete Book</Link></li>
-                        <li><Link to="#">Edit Book</Link></li>
+                        <li><Link to="/editbooks">Edit Book</Link></li>
                         <li><Link to="#">Checkout Book</Link></li>
                         <li><Link to="#">Return Book</Link></li>
                     </ul>
