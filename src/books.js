@@ -2,10 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import api from './test/stubAPI'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-import request from 'superagent' ;
-
-const statusTypes =  ['available','unavailable'];
-const genreTypes =  ['Crime','Childrens','Military History','Fiction'];
 
 const selectRowProp = {
   mode: 'radio',
@@ -50,12 +46,15 @@ class Books extends React.Component {
     }
 
     render() {
-        let books = api.getAll() ;
+      let books = api.getAllBooks() ;
+      let statusTypes = api.getAllStatusTypes() ;
+      let genreTypes = api.getAllGenreTypes() ;
 
         return (
           <div>
             <h1>Add or Delete a Book</h1>
-            <p>select a row and click the delete button to delete</p>
+            <p>Click the <b>NEW</b> button to add a book</p>
+            <p>Select a row and click the <b>DELETE</b> button to delete a book</p>
             <BootstrapTable data={books} striped={true} hover={true} search={ true } selectRow={ selectRowProp } deleteRow={ true } insertRow={ true } options={ options }>
                 <TableHeaderColumn dataField="id" isKey={true} searchable={ false } dataAlign="center" dataSort={true}>ID</TableHeaderColumn>
                 <TableHeaderColumn dataField="title" dataAlign="center" dataSort={true}>Name</TableHeaderColumn>

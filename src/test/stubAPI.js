@@ -3,6 +3,10 @@ import _ from 'lodash';
 class StubAPI {
 
     constructor() {
+        this.statusTypes =  ['available','unavailable'];
+
+        this.genreTypes =  ['Crime','Childrens','Military History','Fiction'];
+
         this.books = [
           {
               'id':1,
@@ -95,8 +99,16 @@ class StubAPI {
         return elements;
     }
 
-    getAll() {
+    getAllBooks() {
         return this.books ;
+    }
+
+    getAllGenreTypes() {
+        return this.genreTypes ;
+    }
+
+    getAllStatusTypes() {
+        return this.statusTypes ;
     }
 
     findBook(key){

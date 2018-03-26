@@ -6,7 +6,7 @@ class Book extends React.Component {
 
 //alert(`id = ${bookId}`);
 //  state = {
-//    title: this.props.book,
+//    title: this.props.book.title,
 //    author: this.props.book.author,
 //    status: this.props.book.status
 //  };

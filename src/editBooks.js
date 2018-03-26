@@ -2,9 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import api from './test/stubAPI'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-import request from 'superagent' ;
-
-const genreTypes =  ['Crime','Childrens','Military History','Fiction'];
 
 const cellEditProp = {
   mode: 'dbclick',
@@ -16,7 +13,8 @@ class EditBooks extends React.Component {
     }
 
     render() {
-        let books = api.getAll() ;
+      let books = api.getAllBooks() ;
+      let genreTypes = api.getAllGenreTypes() ;
 
         return (
           <div>

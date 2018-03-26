@@ -7,6 +7,7 @@ import Header from './header';
 import Footer from './footer';
 import Books from './books';
 import EditBooks from './editBooks';
+import ViewBooks from './viewBooks';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import './app.css';
@@ -28,6 +29,7 @@ const Router = (props) =>
                 <Route exact path='/books/' component={ Books } />
                 <Route path='/books/:id' component={ Book } />
                 <Route path='/editbooks/' component={ EditBooks } />
+                <Route path='/viewbooks/' component={ ViewBooks } />
                 <Route exact path='/' component={ Home } />
                 <Redirect from='*' to='/' />
             </Switch>
