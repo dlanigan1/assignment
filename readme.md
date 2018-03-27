@@ -45,8 +45,10 @@ The following images show the various views throughout the system.
 ![about page][image2]
 ### Add Delete Book
 ![add delete book][image3]
-### View Book
-![view book][image4]
+### View All Books
+![view books][image4]
+### View Particular Book
+![view one book][image8]
 ### Edit Book
 ![edit book][image5]
 ### Borrow Book
@@ -81,3 +83,4 @@ I researched and implemented a custom data grid control for the edit and add pag
 [image5]: ./editbook.png
 [image6]: ./borrowbook.png
 [image7]: ./returnbook.png
+[image8]: ./viewonebook.png
