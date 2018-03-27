@@ -30,18 +30,15 @@ After cloning the repo, all you have to do to run the app is npm install + npm s
 
 Diagram of app's data model (see example below) AND/OR a sample of the test data used (JSON or equivalent).
 
-![][image1]
-
 Use meaningful sample data. Briefly explain any non-trivial issues.
 
 ## App Component Design.
 
 A diagram showing the app's hierarchical component design (see example below).
 
-
 ## UI Design.
 
-. . . . . Screenshots of app's views (see example below) with appropriate captions (user regeneration and login views, if implemented, can be omitted) . . . . . . .
+The following images show the various views throughout the system.
 ### Home Page
 ![home page][image1]
 ### About Page
@@ -81,7 +78,7 @@ I researched and implemented a custom data grid control for the edit and add pag
 [image1]: ./homepage.png
 [image2]: ./about.png
 [image3]: ./addDeletebook.png
-[image4]: ./borrowbook.png
+[image7]: ./viewbooks.png
 [image5]: ./editbook.png
+[image4]: ./borrowbook.png
 [image6]: ./returnbook.png
-[image7]: ./viewbook.png
