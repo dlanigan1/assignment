@@ -27,7 +27,7 @@ const Router = (props) =>
             <Switch>
                 <Route path='/about' component={ About } />
                 <Route exact path='/books/' component={ Books } />
-                <Route path='/books/:id' component={ Book } />
+                <Route path='/viewbooks/:id' component={ Book } />
                 <Route path='/editbooks/' component={ EditBooks } />
                 <Route path='/viewbooks/' component={ ViewBooks } />
                 <Route exact path='/' component={ Home } />
