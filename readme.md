@@ -38,6 +38,11 @@ Use meaningful sample data. Briefly explain any non-trivial issues.
 
 A diagram showing the app's hierarchical component design (see example below).
 
+
+## UI Design.
+
+. . . . . Screenshots of app's views (see example below) with appropriate captions (user regeneration and login views, if implemented, can be omitted) . . . . . . .
+
 ![][image1]
 ![][image2]
 ![][image3]
@@ -46,11 +51,6 @@ A diagram showing the app's hierarchical component design (see example below).
 ![][image6]
 ![][image7]
 
-## UI Design.
-
-. . . . . Screenshots of app's views (see example below) with appropriate captions (user regeneration and login views, if implemented, can be omitted) . . . . . . .
-
-![][image3]
 
 ## Routing.
 + /about/ - displays the about page
