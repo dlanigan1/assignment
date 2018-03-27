@@ -82,6 +82,7 @@
   }
 
   ],
+
   "statusTypes" : ["available","unavailable"],
 
   "genreTypes" :  ["Crime","Childrens","Military History","Fiction"]

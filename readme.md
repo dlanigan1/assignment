@@ -30,9 +30,27 @@ After cloning the repo, all you have to do to run the app is npm install + npm s
 
 ## Data Model Design.
 
-Diagram of app's data model (see example below) AND/OR a sample of the test data used (JSON or equivalent).
+There are 3 tables in the data model. In this version of the application they are stored in /tst/db.json.
+The first table is the books table. It contains the list of books. The ID is the unique identifier. This is currently text but it will become an object id when the system is ported to MongoDB.
 
-Use meaningful sample data. Briefly explain any non-trivial issues.
+The statusTypes table is a lookup table of status types.
+The genreTypes table is a lookup table of genre types.
+
+### Status types
+"statusTypes" : ["available","unavailable"],
+
+### Genre types
+"genreTypes" :  ["Crime","Childrens","Military History","Fiction"]
+
+### Books
+{
+    "id":2,
+    "title": "Stalingrad",
+    "author": "Antony Beevor",
+    "genre": "Military History",
+    "summary": "Stalingrad is a narrative history written by Antony Beevor of the battle fought in and around the city of Stalingrad during World War II",
+    "status": "available"
+},
 
 ## App Component Design.
 
