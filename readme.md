@@ -79,9 +79,9 @@ I researched and implemented a custom data grid control for the edit and add pag
 
 
 [image1]: ./homepage.png
-[image2]: ./about.jpg
-[image3]: ./addDeleteBook.png
-[image4]: ./borrowBook.png
-[image5]: ./editBook.png
-[image6]: ./returnBook.png
-[image7]: ./viewBook.png
+[image2]: ./about.png
+[image3]: ./addDeletebook.png
+[image4]: ./borrowbook.png
+[image5]: ./editbook.png
+[image6]: ./returnbook.png
+[image7]: ./viewbook.png
