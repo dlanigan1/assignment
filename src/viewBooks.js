@@ -27,14 +27,6 @@ class Book extends React.Component {
 
 class ViewBooks extends React.Component {
 
-//alert(`id = ${bookId}`);
-//  state = {
-//    title: this.props.book,
-//    author: this.props.book.author,
-//    status: this.props.book.status
-//  };
-
-
   render() {
     let bookList = api.getAllBooks() ;
 

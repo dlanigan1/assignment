@@ -3,9 +3,11 @@
 Name: David Lanigan
 
 ## Overview.
-The App is a mock up of a library book system. When it's finished there will be a database of books that users can check out and return and perform all the usual operations on like add new books, delete books and modify existing books. For the initial part of this assignment, there is no back end and the data is held in a JSON file locally. Eventually this will be ported to MongoDb database and we will develop API's to handle the CRUD operations.  
+The App is a mock up of a library book system. It is basically a database of books where users can view books, add new books, delete books and modify existing books. In the next phase of the assignment the users will be able to check out and return books also.
 
-The reason for the view screen and the add/edit screen looking differently is because I wanted to showcase two different ways of displaying the same information. The view screen is done using the standard react syntax and html and the add/edit screens are done using a custom grid component. The view individual book is just there to demonstrate parameterised routing.
+For the initial part of this assignment, there is no back end and the data is held in a JSON file locally. The Add/Delete/Edit functionality works by making REST calls to the JSON file instead of a database .Eventually this will be ported to MongoDb database and we will change the API's to handle the CRUD operations.
+
+The reason for the View screen and the Add/Edit screen looking differently is because I wanted to showcase two different ways of displaying the same information. The view component is done using the standard react syntax with HTML and the Add/Edit components are done using a custom grid component. The view individual book component is just there to demonstrate parameterised routing. Note that the Add and Edit components are seperate due to a limitation with the control. It doesn't seem to like editing and row selection in the same grid so I just made two.
 
 ## User Features.
 
@@ -14,7 +16,7 @@ The reason for the view screen and the add/edit screen looking differently is be
  + Add Book
  + Delete Book
  + Modify Book
- + Check out/Return book is not available yet but will be available in the next part of the assignment
+ + Check out/Return book is not available yet but will be available in the next part of the assignment.
 
 ## Installation requirements.
 
@@ -25,8 +27,15 @@ The reason for the view screen and the add/edit screen looking differently is be
 + lodash 4.7.15
 + react-dom
 + react-router-dom
++ json-server 0.12.1
 
-After cloning the repo, all you have to do to run the app is npm install + npm start
+After cloning the repo, You have to do the following to run the app:
+
+1) npm install
+
+2) npm dev-server
+
+3) npm start
 
 ## Data Model Design.
 
@@ -92,7 +101,8 @@ Just the standard viewing and CRUD operations in this version of the app. Data i
 
 ## Independent learning.
 
-I researched and implemented a custom data grid control for the edit and add pages along with its associated functionality.
+I researched and implemented the custom data grid control for the edit and add pages along with its associated functionality.
+I also had to learn how to implement and run json-server from package.json and I had to learn how to formulate the REST API calls to perform the CRUD operations.
 
 [image1]: ./homepage.png
 [image2]: ./about.png
