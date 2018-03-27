@@ -33,7 +33,7 @@ After cloning the repo, You have to do the following to run the app:
 
 1) npm install
 
-2) npm dev-server
+2) npm run dev-server
 
 3) npm start
 
