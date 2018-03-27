@@ -45,15 +45,14 @@ The following images show the various views throughout the system.
 ![about page][image2]
 ### Add Delete Book
 ![add delete book][image3]
-### Borrow Book
-![borrow book][image4]
+### View Book
+![view book][image4]
 ### Edit Book
 ![edit book][image5]
+### Borrow Book
+![borrow book][image6]
 ### Return Book
-![return book][image6]
-### View Book
-![view book][image7]
-
+![return book][image7]
 
 ## Routing.
 + /about/ - displays the about page
