@@ -5,17 +5,19 @@ Name: David Lanigan
 ## Overview.
 The App is a mock up of a library book system. When it's finished there will be a database of books that users can check out and return and perform all the usual operations on like add new books, delete books and modify existing books. For the initial part of this assignment, there is no back end and the data is held in a JSON file locally. Eventually this will be ported to MongoDb database and we will develop API's to handle the CRUD operations.  
 
+The reason for the view screen and the add/edit screen looking differently is because I wanted to showcase two different ways of displaying the same information. The view screen is done using the standard react syntax and html and the add/edit screens are done using a custom grid component. The view individual book is just there to demonstrate parameterised routing.
 
- . . . . . List of user features (excluding user registration and authentication) . . . .
+## User Features.
 
- + View Books
+ + View all Books
+ + View an individual Book
  + Add Book
  + Delete Book
  + Modify Book
  + Check out/Return book is not available yet but will be available in the next part of the assignment
 
 ## Installation requirements.
-. . . .  List of software used to develop the app . . . . . . .
+
 + ReactJS v15.3.0
 + Bootstrap 3
 + create-react-app tool
@@ -34,7 +36,7 @@ Use meaningful sample data. Briefly explain any non-trivial issues.
 
 ## App Component Design.
 
-A diagram showing the app's hierarchical component design (see example below).
+![Component design][image9]
 
 ## UI Design.
 
@@ -72,9 +74,7 @@ Just the standard viewing and CRUD operations in this version of the app. Data i
 
 ## Independent learning.
 
-I researched and implemented a custom data grid control for the edit and add pages.
-
-
+I researched and implemented a custom data grid control for the edit and add pages along with its associated functionality.
 
 [image1]: ./homepage.png
 [image2]: ./about.png
@@ -84,3 +84,4 @@ I researched and implemented a custom data grid control for the edit and add pag
 [image6]: ./borrowbook.png
 [image7]: ./returnbook.png
 [image8]: ./viewonebook.png
+[image9]: ./flow.png
