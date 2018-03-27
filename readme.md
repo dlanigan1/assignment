@@ -42,14 +42,20 @@ A diagram showing the app's hierarchical component design (see example below).
 ## UI Design.
 
 . . . . . Screenshots of app's views (see example below) with appropriate captions (user regeneration and login views, if implemented, can be omitted) . . . . . . .
-
-![][image1]
-![][image2]
-![][image3]
-![][image4]
-![][image5]
-![][image6]
-![][image7]
+### Home Page
+![home page][image1]
+### About Page
+![about page][image2]
+### Add Delete Book
+![add delete book][image3]
+### Borrow Book
+![borrow book][image4]
+### Edit Book
+![edit book][image5]
+### Return Book
+![return book][image6]
+### View Book
+![view book][image7]
 
 
 ## Routing.
