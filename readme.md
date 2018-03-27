@@ -12,17 +12,19 @@ The App is a mock up of a library book system. When it's finished there will be 
  + Add Book
  + Delete Book
  + Modify Book
- + etc
+ + Check out/Return book is not available yet but will be available in the next part of the assignment
 
 ## Installation requirements.
 . . . .  List of software used to develop the app . . . . . . .
 + ReactJS v15.3.0
 + Bootstrap 3
 + create-react-app tool
-+ etc
-+ etc
++ react-bootstrap-table
++ lodash 4.7.15
++ react-dom
++ react-router-dom
 
-. . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation; any environment setup; how to start app; where to view app in browser . . . . . . . At its simplest this may just be: npm install + npm start
+After cloning the repo, all you have to do to run the app is npm install + npm start
 
 ## Data Model Design.
 
@@ -36,7 +38,13 @@ Use meaningful sample data. Briefly explain any non-trivial issues.
 
 A diagram showing the app's hierarchical component design (see example below).
 
+![][image1]
 ![][image2]
+![][image3]
+![][image4]
+![][image5]
+![][image6]
+![][image7]
 
 ## UI Design.
 
@@ -45,23 +53,29 @@ A diagram showing the app's hierarchical component design (see example below).
 ![][image3]
 
 ## Routing.
-. . . . List each route supported and state the associated view . . . . .
-
-+ /foos - displays all published foos
-+ /foos/:id - detail view of a particular foo (:id)
-+ etc
-+ etc
++ /about/ - displays the about page
++ /viewbooks/ - lists all books
++ /viewbooks/:id - detail view of a particular book
++ /editbooks/ - displays a grid of books for editing
++ /checkoutbook/ - redirects to a placeholder page for now. The functionality will be implemented in the next phase.
++ /checkinbook/ - redirects to a placeholder page for now. The functionality will be implemented in the next phase.
++ /books/ - displays a grid of books for adding/deleting
++ / - displays the home page
 
 ## Extra features
 
-. . . . . Briefly explain any non-standard features, functional or non-functional (e.g. user registration, authentication) developed for the app . . . . . .  
+Just the standard viewing and CRUD operations in this version of the app. Data is not yet persistent as there is no back end.
 
 ## Independent learning.
 
-. . . . . State the non-standard aspects of Angular (or other related technologies) that you researched and applied in this assignment . . . . .  
+I researched and implemented a custom data grid control for the edit and add pages.
 
 
 
-[image1]: ./model.png
-[image2]: ./design.jpg
-[image3]: ./screen.png
+[image1]: ./homepage.png
+[image2]: ./about.jpg
+[image3]: ./addDeleteBook.png
+[image4]: ./borrowBook.png
+[image5]: ./editBook.png
+[image6]: ./returnBook.png
+[image7]: ./viewBook.png

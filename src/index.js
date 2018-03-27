@@ -8,6 +8,8 @@ import Footer from './footer';
 import Books from './books';
 import EditBooks from './editBooks';
 import ViewBooks from './viewBooks';
+import BorrowBook from './borrowBook';
+import ReturnBook from './returnBook';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import './app.css';
@@ -30,6 +32,8 @@ const Router = (props) =>
                 <Route path='/viewbooks/:id' component={ Book } />
                 <Route path='/editbooks/' component={ EditBooks } />
                 <Route path='/viewbooks/' component={ ViewBooks } />
+                <Route path='/borrowbook/' component={ BorrowBook } />
+                <Route path='/returnbook/' component={ ReturnBook } />
                 <Route exact path='/' component={ Home } />
                 <Redirect from='*' to='/' />
             </Switch>

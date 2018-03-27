@@ -21,8 +21,8 @@ class Header extends React.Component {
                         <li><Link to="/viewbooks">View Books</Link></li>
                         <li><Link to="/books">Add/Delete Book</Link></li>
                         <li><Link to="/editbooks">Edit Book</Link></li>
-                        <li><Link to="#">Checkout Book</Link></li>
-                        <li><Link to="#">Return Book</Link></li>
+                        <li><Link to="/borrowbook">Borrow Book</Link></li>
+                        <li><Link to="/returnbook">Return Book</Link></li>
                     </ul>
                 </nav>
             </div>
