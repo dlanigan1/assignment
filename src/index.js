@@ -16,9 +16,9 @@ import './app.css';
 
 const Home = (props) =>
     <div>
-    <h1>Welcome to the Library Book System</h1>
-    <h2>Users can add/delete/view books and can check in/out books via the nav bar</h2>
-    <h2>Users can also navigate directly to a particular book e.g. /books/1</h2>
+      <h1>Welcome to the Library Book System</h1>
+      <h2>Users can add/delete/view books and can check in/out books via the nav bar</h2>
+      <h2>Users can also navigate directly to a particular book e.g. /books/1</h2>
     </div>
 
 const Router = (props) =>
